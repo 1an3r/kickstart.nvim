@@ -9,34 +9,34 @@ return {
     config = function()
       local poimandres_theme = {
         normal = {
-          a = { bg = '#1A1F28', fg = '#F8F8F2', gui = 'bold' },
-          b = { bg = '#1A1F28', fg = '#F8F8F2' },
-          c = { bg = '#1A1F28', fg = '#F8F8F2' },
+          a = { bg = '#1B1E28', fg = '#F8F8F2', gui = 'bold' },
+          b = { bg = '#1B1E28', fg = '#F8F8F2' },
+          c = { bg = '#1B1E28', fg = '#F8F8F2' },
         },
         insert = {
-          a = { bg = '#1A1F28', fg = '#89DDFF', gui = 'bold' },
-          b = { bg = '#1A1F28', fg = '#F8F8F2' },
-          c = { bg = '#1A1F28', fg = '#F8F8F2' },
+          a = { bg = '#1B1E28', fg = '#89DDFF', gui = 'bold' },
+          b = { bg = '#1B1E28', fg = '#F8F8F2' },
+          c = { bg = '#1B1E28', fg = '#F8F8F2' },
         },
         visual = {
-          a = { bg = '#1A1F28', fg = '#FFFAC2', gui = 'bold' },
-          b = { bg = '#1A1F28', fg = '#F8F8F2' },
-          c = { bg = '#1A1F28', fg = '#F8F8F2' },
+          a = { bg = '#1B1E28', fg = '#FFFAC2', gui = 'bold' },
+          b = { bg = '#1B1E28', fg = '#F8F8F2' },
+          c = { bg = '#1B1E28', fg = '#F8F8F2' },
         },
         replace = {
-          a = { bg = '#1A1F28', fg = '#D0679D', gui = 'bold' },
-          b = { bg = '#1A1F28', fg = '#F8F8F2' },
-          c = { bg = '#1A1F28', fg = '#F8F8F2' },
+          a = { bg = '#1B1E28', fg = '#D0679D', gui = 'bold' },
+          b = { bg = '#1B1E28', fg = '#F8F8F2' },
+          c = { bg = '#1B1E28', fg = '#F8F8F2' },
         },
         command = {
-          a = { bg = '#1A1F28', fg = '#5DE4C7', gui = 'bold' },
-          b = { bg = '#1A1F28', fg = '#F8F8F2' },
-          c = { bg = '#1A1F28', fg = '#F8F8F2' },
+          a = { bg = '#1B1E28', fg = '#5DE4C7', gui = 'bold' },
+          b = { bg = '#1B1E28', fg = '#F8F8F2' },
+          c = { bg = '#1B1E28', fg = '#F8F8F2' },
         },
         inactive = {
-          a = { bg = '#1A1F28', fg = '#F8F8F2', gui = 'bold' },
-          b = { bg = '#1A1F28', fg = '#F8F8F2' },
-          c = { bg = '#1A1F28', fg = '#F8F8F2' },
+          a = { bg = '#1B1E28', fg = '#F8F8F2', gui = 'bold' },
+          b = { bg = '#1B1E28', fg = '#F8F8F2' },
+          c = { bg = '#1B1E28', fg = '#F8F8F2' },
         },
       }
 
