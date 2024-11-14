@@ -146,7 +146,7 @@ return {
           lualine_a = { mode },
           lualine_b = { { 'filename', path = 1 } },
           lualine_c = { diff, diagnostics, 'branch' },
-          lualine_x = { "os.date('%a')" },
+          lualine_x = { "os.date('%d/%m/%y %H:%M:%S')" },
           lualine_y = { filetype },
           lualine_z = { 'location' },
         },
