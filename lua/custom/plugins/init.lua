@@ -7,39 +7,6 @@ return {
     'nvim-lualine/lualine.nvim',
     dependencies = { 'nvim-tree/nvim-web-devicons' },
     config = function()
-      local poimandres_theme = {
-        normal = {
-          a = { bg = '#1B1E28', fg = '#F8F8F2', gui = 'bold' },
-          b = { bg = '#1B1E28', fg = '#F8F8F2' },
-          c = { bg = '#1B1E28', fg = '#F8F8F2' },
-        },
-        insert = {
-          a = { bg = '#1B1E28', fg = '#89DDFF', gui = 'bold' },
-          b = { bg = '#1B1E28', fg = '#F8F8F2' },
-          c = { bg = '#1B1E28', fg = '#F8F8F2' },
-        },
-        visual = {
-          a = { bg = '#1B1E28', fg = '#FFFAC2', gui = 'bold' },
-          b = { bg = '#1B1E28', fg = '#F8F8F2' },
-          c = { bg = '#1B1E28', fg = '#F8F8F2' },
-        },
-        replace = {
-          a = { bg = '#1B1E28', fg = '#D0679D', gui = 'bold' },
-          b = { bg = '#1B1E28', fg = '#F8F8F2' },
-          c = { bg = '#1B1E28', fg = '#F8F8F2' },
-        },
-        command = {
-          a = { bg = '#1B1E28', fg = '#5DE4C7', gui = 'bold' },
-          b = { bg = '#1B1E28', fg = '#F8F8F2' },
-          c = { bg = '#1B1E28', fg = '#F8F8F2' },
-        },
-        inactive = {
-          a = { bg = '#1B1E28', fg = '#F8F8F2', gui = 'bold' },
-          b = { bg = '#1B1E28', fg = '#F8F8F2' },
-          c = { bg = '#1B1E28', fg = '#F8F8F2' },
-        },
-      }
-
       local icon = {
         kind = {
           Codeium = '',
@@ -167,9 +134,49 @@ return {
         always_visible = false,
       }
 
+      local colors = require('catppuccin.palettes').get_palette 'mocha'
+
+      local catppuccin = {
+        normal = {
+          a = { bg = 'none', fg = colors.rosewater, gui = 'bold' },
+          b = { bg = 'none', fg = colors.text },
+          c = { bg = 'none', fg = colors.text },
+          x = { bg = 'none', fg = colors.flamingo, gui = 'bold' },
+        },
+        insert = {
+          a = { bg = 'none', fg = colors.sapphire, gui = 'bold' },
+          b = { bg = 'none', fg = colors.text },
+          c = { bg = 'none', fg = colors.text },
+          x = { bg = 'none', fg = colors.blue, gui = 'bold' },
+        },
+        visual = {
+          a = { bg = 'none', fg = colors.peach, gui = 'bold' },
+          b = { bg = 'none', fg = colors.text },
+          c = { bg = 'none', fg = colors.text },
+          x = { bg = 'none', fg = colors.yellow, gui = 'bold' },
+        },
+        replace = {
+          a = { bg = 'none', fg = colors.red, gui = 'bold' },
+          b = { bg = 'none', fg = colors.text },
+          c = { bg = 'none', fg = colors.text },
+          x = { bg = 'none', fg = colors.maroon, gui = 'bold' },
+        },
+        command = {
+          a = { bg = 'none', fg = colors.teal, gui = 'bold' },
+          b = { bg = 'none', fg = colors.text },
+          c = { bg = 'none', fg = colors.text },
+          x = { bg = 'none', fg = colors.sky, gui = 'bold' },
+        },
+        inactive = {
+          a = { bg = 'none', fg = colors.gray, gui = 'bold' },
+          b = { bg = 'none', fg = colors.gray },
+          c = { bg = 'none', fg = colors.gray },
+        },
+      }
+
       require('lualine').setup {
         options = {
-          theme = poimandres_theme,
+          theme = catppuccin,
           globalstatus = true,
           section_separators = '',
           component_separators = '',
