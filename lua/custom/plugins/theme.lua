@@ -11,7 +11,20 @@ return {
           },
         },
       }
-      vim.cmd.colorscheme 'catppuccin-mocha'
+      --vim.cmd.colorscheme 'catppuccin-mocha'
+    end,
+  },
+  {
+    'blazkowolf/gruber-darker.nvim',
+    priority = 1000,
+    config = function()
+      ---@diagnostic disable-next-line: missing-fields
+      require('gruber-darker').setup {
+        italic = {
+          comments = false,
+        },
+      }
+      vim.cmd.colorscheme 'gruber-darker'
     end,
   },
 }
