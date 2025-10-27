@@ -4,8 +4,8 @@ return {
   event = 'VeryLazy',
   config = function()
     -- Changes the StatusLine highlight to the same color of the background. When you change themes, refer to here as the outer edges with coloring errors.
-    vim.api.nvim_set_hl(0, 'StatusLine', { bg = '#282828' })
-    vim.api.nvim_set_hl(0, 'StatusLineNC', { bg = '#282828' })
+    vim.api.nvim_set_hl(0, 'StatusLine', { bg = '#2E3440' })
+    vim.api.nvim_set_hl(0, 'StatusLineNC', { bg = '#2E3440' })
     -- Custom Lualine component to show attached language server
     local clients_lsp = function()
       local bufnr = vim.api.nvim_get_current_buf()
@@ -19,7 +19,7 @@ return {
       for _, client in pairs(clients) do
         table.insert(c, client.name)
       end
-      return '  ' .. table.concat(c, '|')
+      return ' ' .. table.concat(c, '|')
     end
 
     -- Custom colours for catppuccin theme:
@@ -38,7 +38,7 @@ return {
 
     -- Custom colours for gruber-darker theme:
 
-    local custom_gruvbox = require 'lualine.themes.gruvbox_dark'
+    --[[ local custom_gruvbox = require 'lualine.themes.gruvbox_dark'
 
     custom_gruvbox.normal.b.fg = '#A89984'
     custom_gruvbox.insert.b.fg = '#A89984'
@@ -48,11 +48,12 @@ return {
     custom_gruvbox.inactive.b.fg = '#A89984'
 
     custom_gruvbox.normal.c.fg = '#A89984'
-    custom_gruvbox.normal.c.bg = '#282828'
+    custom_gruvbox.normal.c.bg = '#282828' ]]
+    --
 
     require('lualine').setup {
       options = {
-        theme = custom_gruvbox,
+        theme = nord,
         component_separators = '',
         section_separators = { left = '', right = '' },
         disabled_filetypes = { 'alpha', 'Outline' },

@@ -1,5 +1,14 @@
 return {
   {
+    'shaunsingh/nord.nvim',
+    lazy = false,
+    priority = 1000,
+    config = function()
+      vim.cmd.colorscheme 'nord'
+    end,
+  },
+
+  --[[{
     'sainnhe/gruvbox-material',
     lazy = false,
     priority = 1000,
@@ -8,6 +17,7 @@ return {
       vim.cmd.colorscheme 'gruvbox-material'
     end,
   },
+  --]]
   --[[
     {
     'catppuccin/nvim',
