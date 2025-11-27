@@ -4,8 +4,8 @@ return {
   event = 'VeryLazy',
   config = function()
     -- Changes the StatusLine highlight to the same color of the background. When you change themes, refer to here as the outer edges with coloring errors.
-    vim.api.nvim_set_hl(0, 'StatusLine', { bg = '#2E3440' })
-    vim.api.nvim_set_hl(0, 'StatusLineNC', { bg = '#2E3440' })
+    vim.api.nvim_set_hl(0, 'StatusLine', { bg = '#0A0E14' })
+    vim.api.nvim_set_hl(0, 'StatusLineNC', { bg = '#f0f0f0' })
     -- Custom Lualine component to show attached language server
     local clients_lsp = function()
       local bufnr = vim.api.nvim_get_current_buf()
@@ -51,9 +51,18 @@ return {
     custom_gruvbox.normal.c.bg = '#282828' ]]
     --
 
+    local ayu_colors = require 'lualine.themes.ayu'
+
+    ayu_colors.normal.b.bg = '#0A0E14'
+    ayu_colors.normal.c.bg = '#0A0E14'
+
+    ayu_colors.visual.b.bg = '#0A0E14'
+    ayu_colors.insert.b.bg = '#0A0E14'
+    ayu_colors.command.b.bg = '#0A0E14'
+
     require('lualine').setup {
       options = {
-        theme = nord,
+        theme = ayu_colors,
         component_separators = '',
         section_separators = { left = '', right = '' },
         disabled_filetypes = { 'alpha', 'Outline' },

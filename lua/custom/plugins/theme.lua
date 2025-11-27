@@ -1,12 +1,21 @@
 return {
   {
+    'Shatur/neovim-ayu',
+    lazy = false,
+    priority = 1000,
+    config = function()
+      vim.cmd.colorscheme 'ayu'
+    end,
+  },
+  --[[  {
     'shaunsingh/nord.nvim',
     lazy = false,
     priority = 1000,
     config = function()
       vim.cmd.colorscheme 'nord'
     end,
-  },
+  }  ]]
+  --,
 
   --[[{
     'sainnhe/gruvbox-material',
