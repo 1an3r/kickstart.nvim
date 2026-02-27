@@ -1,3 +1,4 @@
+--[[
 local function substitute_with_ssd(input_str) return input_str:gsub('^/Volumes/ADATA%-LEGEND%-960%-MAX/', '~/ssd/') end
 
 local function override_hl()
@@ -30,8 +31,9 @@ local function get_overseer_task_status(status)
 end
 
 local function get_relative_filename() return substitute_with_ssd(vim.fn.expand '%:.') end
-
+]]
 return {
+  --[[
   'echasnovski/mini.statusline',
   version = '*',
   config = function()
@@ -72,4 +74,5 @@ return {
       },
     }
   end,
+  ]]
 }

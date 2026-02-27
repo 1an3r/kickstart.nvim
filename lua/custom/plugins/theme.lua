@@ -1,3 +1,4 @@
+-- THEME configuration, currently obssesed with rosé pine;
 ---@diagnostic disable: undefined-global
 return {
   'rose-pine/neovim',
